@@ -707,7 +707,12 @@ a {
   }
   .w3-col.m6,
   .w3-half {
-      width: 49.99999%
+      width: 49.99999%;
+  }
+  .w3-col.m6B {
+    width: 49.99999%;
+    position: relative;
+    top: 80px;
   }
   .w3-col.m7 {
       width: 58.33333%
@@ -1774,4 +1779,7 @@ a {
 
 .back-from-bottom {
   color: #c0cee5;
+}
+.portfolio-container {
+  padding: 20px 5px;
 }

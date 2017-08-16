@@ -28,8 +28,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('images/chip1.jpg');
-    min-height: 400px;
+    background-image: url('images/chip1-copy3.jpg');
+    min-height: 100%;
     
 }
 
@@ -74,14 +74,13 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span> -->
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hide-small">Christian's Portfolio </span>
   </div>
 </div>
 
@@ -91,17 +90,17 @@ body, html {
   <p class="w3-center"><em>I love programming</em></p>
   <p>I have experience with OOP (object oriented programming) and FP (functional programming). I specialize in JavaScript, but I also worked with Java years ago. My projects are mainly built with scalability and performance in mind utilizing React, Redux, and Node. I love to play with data visualizations, that’s why I created iD3 with other 3 engineers.
     <br>
-    Even though, the backend is not my specialty at the time of this writing, I feel confident interacting with relational and non-relational databases. On the weekends, you can find me playing tennis or volunteering in my community. Oh, by the way, I’m a big fan of any outdoor activity that involves food and music. 
+    Even though, the backend is not my specialty at the time of this writing, I feel confident interacting with relational databases and RESTful APIs. On the weekends, you can find me playing tennis or volunteering in my community. Oh, by the way, I’m a big fan of any outdoor activity that involves food and music. 
     </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Christian</b></p><br>
-      <img src="images/cs-head-shot.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="images/head-shot-3.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="250">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Thanks for stopping by! I’m originally from Lima, Peru, a city in South America, I’m very proud of my roots and I can spend hours talking about my home country. However, I’ve been long enough in the US to call it home. But let’s not worry about working permits, or visas, I became a US citizen a while ago. Feel free to scroll down, and see my work. Have a great day!</p>
+    <div class="w3-col m6B w3-hide-small w3-padding-large">
+      <p>I’m originally from Lima, Peru, a city in South America, I’m very proud of my roots and I can spend hours talking about my home country. However, I’ve been long enough in the US to call it home. But let’s not worry about working permits, or visas, I became a US citizen a while ago. Feel free to scroll down, and see my work. Have a great day!</p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
@@ -141,32 +140,35 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest projects.</em></p><br>
+<!-- **** NEW ***** Portfolio section -->
+<div class="w3-row w3-padding-64" id="portfolio">
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m6">
-      <a style="text-decoration: none" href="https://github.com/C-JSN/D3-ID3#readme">source code <i class="fa fa-code w3-hover-opacity"></i></a>
-      <img src="images/id3-home.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="iD3">
-    </div>
+  <div class="w3-row w3-padding-large">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <a style="text-decoration: none" href="https://github.com/C-JSN/D3-ID3#readme">iD3 | source code <i class="fa fa-code w3-hover-opacity"></i></a>
+        <img src="images/id3-home.png" class="w3-round w3-image" alt="Photo of Me" width="500">
+      </div>
 
-    <div class="w3-col m6">
-      <a style="text-decoration: none" href="https://github.com/crp2002/e-commerce-site">source code <i class="fa fa-code w3-hover-opacity"></i></a>
-      <img src="images/dollar-home.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dollar Shirt Club">
-    </div>
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6B w3-hide-small">
+        <p>iD3 is an integrated development enviroment for data driven documents (D3.js). It's a tool to get users familiarized with D3 and have their projects ready to upload to the browser<br>It's built in electron, with React, and Redux. It features controlled components, and a container-view design.</p>
+      </div>   
   </div>
-</div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+  <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <a style="text-decoration: none" href="https://github.com/crp2002/e-commerce-site">Dollar Shirt Clulb | source code <i class="fa fa-code w3-hover-opacity"></i></a>
+        <img src="images/dollar-home.png" class="w3-round w3-image" alt="Dolar Shirt Club" width="500">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6B w3-hide-small">
+        <p>Fast and scalable e-commerce site built with React and Redux. Other features involve unit testing and test coverage with Jest and Enzyme.<br>
+        Sass (pre-processor) is also used for styling to follow dry principles and make code more maintainable.
+        </p>
+      </div>   
   </div>
+
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
